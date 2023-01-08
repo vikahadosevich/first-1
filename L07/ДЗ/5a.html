@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.card {
+			border:2px solid #cecece;
+			border-top-color: #6fcd70;
+			border-bottom-color: #6fcd70;
+			width: 300px;
+			margin: 0 auto;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.card-plan{
+			color: #6fcd70;
+			height: 90px;
+			line-height: 90px;
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+		.card-price{
+			background-color: #6fcd70;
+			height:60px;
+			line-height: 60px;
+			color:white;
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+		.card-options div{
+			color: gray;
+			height: 35px;
+			line-height: 35px;
+		}
+
+		.card-options div:nth-child(even){
+			background-color: #dbdbdb;
+		}
+
+		.card-btn {
+			padding: 35px
+		}
+		.card-btn button{
+			background: transparent;
+			border:2px solid #6fcd70;
+			color: #6fcd70;
+			border-radius: 3px;
+			padding: 8px 12px;
+		}
+		.card-btn button:hover{
+			background: #e1fce1;
+		}
+
+		.card-btn button:active{
+			color: white;
+			background: #6fcd70;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="card">
+		<div class="card-plan">Basic</div>
+		<div class="card-price">$99</div>
+		<div class="card-options">
+			<div>Option</div>
+			<div>Option</div>
+			<div>Option</div>
+			<div>Option</div>
+			<div>Option</div>
+			<div>Option</div>
+		</div>
+		<div class="card-btn">
+			<button>Purchase</button>
+		</div>
+	</div>
+</body>
+</html>

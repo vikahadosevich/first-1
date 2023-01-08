@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.flex-nowrap{
+			flex-wrap: nowrap;
+		}
+		.flex-wrap{
+			flex-wrap: wrap;
+		}
+		.flex-reverse{
+			flex-wrap: wrap-reverse;
+		}
+
+		.align-content-start{
+			align-content: flex-start;
+		}
+		.align-content-end{
+			align-content: flex-end;
+		}
+		.align-content-center{
+			align-content: center;
+		}
+		.align-content-stretch{
+			align-content: stretch;
+		}
+		.align-content-between{
+			align-content: space-between;
+		}
+		.align-content-around{
+			align-content: space-around;
+		}
+
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			width:600px;
+			height:600px;
+			
+			padding: 10px;
+			gap: 10px;
+			font-size: 2rem;
+			background-color: beige;
+			border: 1px solid rgba(0, 0, 0, 0.5);
+
+		}
+
+		.flex-item {
+			flex-basis: 150px;
+			min-height: 150px;
+			line-height: 150px;
+			background-color: orange;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>align-content</h1>
+	<h2>flex-start</h2>
+	<div class="flex-container flex-wrap align-content-start">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+		<div class="flex-item">7</div>
+		<div class="flex-item">8</div>
+		<div class="flex-item">9</div>
+	</div>
+
+	<h2>flex-end</h2>
+	<div class="flex-container flex-wrap align-content-end">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+		<div class="flex-item">7</div>
+		<div class="flex-item">8</div>
+		<div class="flex-item">9</div>
+	</div>
+
+	<h2>center</h2>
+	<div class="flex-container flex-wrap align-content-center">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+		<div class="flex-item">7</div>
+		<div class="flex-item">8</div>
+		<div class="flex-item">9</div>
+	</div>
+
+	<h2>stretch</h2>
+	<div class="flex-container flex-wrap align-content-stretch">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+		<div class="flex-item">7</div>
+		<div class="flex-item">8</div>
+		<div class="flex-item">9</div>
+	</div>
+
+	<h2>space-between</h2>
+	<div class="flex-container flex-wrap align-content-between">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+		<div class="flex-item">7</div>
+		<div class="flex-item">8</div>
+		<div class="flex-item">9</div>
+	</div>
+
+	<h2>space-around</h2>
+	<div class="flex-container flex-wrap align-content-around">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+		<div class="flex-item">7</div>
+		<div class="flex-item">8</div>
+		<div class="flex-item">9</div>
+	</div>
+</body>
+
+</html>

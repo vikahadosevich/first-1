@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKET_TABLE</title>
+
+    <style>
+        .table1 {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        
+        .cap,
+        .basement{
+            color: blue;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+            padding: 25px;
+            background: rgb(61, 138, 226);
+        }
+
+        .photo {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content1 {
+            padding: 10px;
+        }
+
+        .content2 {
+            padding: 10px;
+        }
+
+        .menu {
+            padding: 10px;
+            width: 200px;
+            background-color: yellow;
+        }
+
+        .h1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table class="table1">
+        <thead>
+            <tr>
+                <th class="cap" colspan="2">Привет участникам соревнований!</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="menu">
+                    <h2>Виды спорта</h2>
+                    <ul>
+                        <li><a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт">конькобежный спорт</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Биатлон">биатлон</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Футбол">футбол</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Стрельба_из_лука">стрельба из лука</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Прыжок_в_длину">прыжки в длину</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Прыжок_в_высоту">прыжки в высоту</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Фигурное_катание">фигурное катание</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Синхронное_плавание">синхронное плавание</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Шахматы">шахматы</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Шашки">шашки</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <h1 class="h1">ФУТБОЛ</h1>
+                    <img class="photo" src="football-2.png">
+                    <p class="content1">
+                        Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника.
+                    </p>
+                    <p class="content2">  
+                        Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости от характера игры.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="basement" colspan="2">
+                    Главное не победа, а участие!
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

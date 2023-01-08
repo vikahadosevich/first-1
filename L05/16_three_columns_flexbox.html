@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		html, body{
+			margin:0;
+
+		}
+
+		.header{
+			height:100px;
+			background-color: yellow;
+			padding:20px;
+			text-align: center;
+		}
+
+		.main-block{
+			display: flex;
+			flex-direction: row;;
+		}
+		.menu{
+			width:150px;
+			flex-grow: 0;
+			flex-shrink: 0;
+			float:left;
+			background-color: rgb(133, 133, 255);
+		}
+		.main{
+			flex-grow: 1;
+			flex-shrink: 1;
+			background-color: pink;
+			height:600px;
+		}
+		.banner {
+			width: 100px;
+			flex-grow: 0;
+			flex-shrink: 0;
+			background-color: greenyellow;
+		}
+		.footer {
+			height:100px;
+			background-color: brown;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">шапка сайта</div>
+		<div class="main-block">
+			<div class="menu"> менюшки и навигация </div>
+
+			<div class="main"> основной контент</div>
+			<div class="banner">баннеры и реклама</div>
+		</div>
+		<div class="footer">подвал, контакты</div>
+
+	</div>
+</body>
+</html>

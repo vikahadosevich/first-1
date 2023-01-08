@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+            background-color: #FFFFFF;
+        }
+
+        code {
+            background-color: #f2f1f1;
+            padding: 0.125rem 0.25rem;
+            width: fit-content;
+        }
+
+        article {
+            width: 750px;
+        }
+
+        .main-section {
+            margin-top: 2rem
+        }
+
+        .tryit_table > table th {
+            border: 1px solid #cdcdcd;
+            border-radius: 0.3em;
+        }
+
+        .tryit_table > table td {
+            border: 1px solid #cdcdcd;
+            border-radius: 0.3em;
+        }
+
+        .tryit_table > table thead {
+            text-align: left;
+        }
+
+        .tryit_table > table tr {
+            height: 50px;
+        }
+
+        .tryit_table .text {
+            padding: 1em;
+        }
+
+        .block {
+            border: 1px solid #cdcdcd;
+            margin: 4%;
+            padding: 4%;
+            background-color: #f9f9fb;
+            border-radius: 0.3em;
+        }
+        .block pre code {
+            background: none;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+        }
+
+        #syntax .example pre {
+            background-color: #f2f1f1;
+            border: 1px solid transparent;
+            margin: 1rem 0 1rem;
+            padding: 1rem 2.5rem 1rem 1rem;
+        }
+
+        #syntax .example pre code {
+            background: none;
+            color: #1b1b1b;
+            padding: 0;
+        }
+
+        #format-syntax pre {
+            background-color: #f2f1f1;
+            border: 1px solid transparent;
+            margin: 1rem 0 1rem;
+            padding: 1rem 2.5rem 1rem 1rem;
+        }
+
+        #format-syntax pre code {
+            background: none;
+            color: #1b1b1b;
+            padding: 0;
+        }
+
+        #format-definition .property {
+            border: none!important;
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        #format-definition .property tr {
+            height: 50px;
+        }
+
+        table.property tr:first-child {
+            border-top: 1px solid #cdcdcd;
+        }
+
+        table.property tr {
+            border-bottom: 1px solid #cdcdcd;
+        }
+
+    </style>
+</head>
+<body>
+    <article>
+        <section id="title">
+            <h1>
+                column-count
+            </h1>
+            <div class="section-body">
+                <p>The <strong><code>column-count</code></strong> <a href="">CSS</a> property breaks an element's content into the specified number of columns.</p>
+            </div>
+        </section>
+
+        <section class="main-section" id="tryit">
+            <h1>
+                Try it
+            </h1>
+            <div class="section-body">
+                <div class="tryit_table" style="width: 100%">
+                    <table style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th colspan="2" style="padding-left: 5%">
+                                    <h4 style="font-weight: 400">CSS Demo: column-count</h4>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="width: 50%">
+                                <div class="block">
+                                    <pre><code>column-count: 2;</code></pre>
+                                </div>
+                            </td>
+                            <td style="width: 50%" rowspan="4">
+                                <div class="text">
+                                    <p style="column-count: 2">
+                                        London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="block">
+                                    <pre><code>column-count: 3;</code></pre>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="block">
+                                    <pre><code>column-count: 4;</code></pre>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="block">
+                                    <pre><code>column-count: auto;
+column-width: 8rem;</code></pre>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section" id="syntax">
+            <h2>
+                Syntax
+            </h2>
+            <div class="section-body">
+                <div class="example">
+                    <pre>
+                        <code>
+/* Keyword value */
+column-count: auto;
+
+/* < integer > value */
+column-count: 3;
+
+/* Global values */
+column-count: inherit;
+column-count: initial;
+column-count: revert;
+column-count: revert-layer;
+column-count: unset;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section" id="values">
+            <h3>Values</h3>
+            <div class="section-body">
+                <dl>
+                    <dt><code>auto</code></dt>
+                    <dd>
+                        <p>The number of columns is determined by other CSS properties, such as <code>column-width</code>.</p>
+                    </dd>
+                    <dt><code>&lt;integer&gt;</code></dt>
+                    <dd>
+                        <p>Is a strictly positive <code>&lt;integer&gt;</code> describing the ideal number of columns into which the content of the element will be flowed. If the <code>column-width</code> is also set to a non-<code>auto</code> value, it merely indicates the maximum allowed number of columns.</p>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="main-section" id="format-definition">
+            <h2>Formal definition</h2>
+            <div class="section-content">
+                <table class="property">
+                    <tbody>
+                    <tr>
+                        <th>Initial value</th>
+                        <td><code>auto</code></td>
+                    </tr>
+                    <tr>
+                        <th>Applies to</th>
+                        <td>Block containers except table wrapper boxes</td>
+                    </tr>
+                    <tr>
+                        <th>Inherited</th>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <th>Computed value</th>
+                        <td>as specified</td>
+                    </tr>
+                    <tr>
+                        <th>Animation type</th>
+                        <td>an integer</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="main-section" id="format-syntax">
+            <h2>
+                Formal syntax
+            </h2>
+            <div class="section-content">
+                <pre>
+                    <code>
+column-count =
+auto
+<span>&lt;integer [1,∞]&gt;</span>
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </article>
+</body>
+</html>

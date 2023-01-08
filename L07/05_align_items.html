@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.align-flex-start{
+			align-items: flex-start;
+		}
+		.align-flex-end{
+			align-items: flex-end;
+		}
+		.align-center{
+			align-items: center;
+		}
+		.align-stretch{
+			align-items: stretch;
+		}
+		.align-baseline{
+			align-items: baseline;
+		}
+
+		.row{
+			height:200px;
+		}
+
+		.column {
+			flex-direction: column;
+			height: 600px;
+		}
+
+		.column-reverse {
+			flex-direction: column-reverse;
+			height: 600px;
+		}
+
+		.flex-container {
+			display: flex;
+			width: 600px;
+			padding: 10px;
+			gap: 10px;
+			font-size: 2rem;
+			background-color: beige;
+			border: 1px solid rgba(0, 0, 0, 0.5);
+
+		}
+
+		.flex-item {
+			flex-basis: 150px;
+			min-height: 150px;
+			line-height: 150px;
+			background-color: orange;
+			text-align: center;
+		}
+
+		.column .flex-item{
+			flex-basis: 80px;
+			width: 100px;
+			min-height: auto;
+			line-height: 80px;;
+		}
+	</style>
+</head>
+<body>
+	<h1>align-items</h1>
+	<h2>flex-direction:row, align-items: flex-start</h2>
+	<div class="flex-container row align-flex-start">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:row, align-items: flex-end</h2>
+	<div class="flex-container row align-flex-end">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:row, align-items: center</h2>
+	<div class="flex-container row align-center">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:row, align-items: stretch</h2>
+	<div class="flex-container row align-stretch">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:row, align-items: baseline</h2>
+	<div class="flex-container row align-baseline">
+		<div class="flex-item" style="line-height:60px">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+
+
+	<h2>flex-direction:column, align-items: flex-start</h2>
+	<div class="flex-container column align-flex-start">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:column, align-items: flex-end</h2>
+	<div class="flex-container column align-flex-end">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:column, align-items: center</h2>
+	<div class="flex-container column align-center">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:column, align-items: stretch</h2>
+	<div class="flex-container column align-stretch">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+	<h2>flex-direction:column, align-items: baseline</h2>
+	<div class="flex-container column align-baseline">
+		<div class="flex-item" style="line-height:60px">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+	</div>
+</body>
+</html>

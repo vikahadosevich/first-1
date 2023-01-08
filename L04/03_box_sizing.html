@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.sample_block {
+			width: 400px;
+			height: 200px;
+			padding: 30px;
+			border:1px solid red;
+			margin: 50px;
+		}
+		.sample_block ul{
+			background-color: rgb(165, 165, 165);
+		}
+		.sample_block__border-box{
+			box-sizing: border-box;
+		}
+		.sample_block__content-box{
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="sample_block">
+		<ul>
+			<li>width: 400px</li>
+			<li>height: 200px</li>
+			<li>padding: 30px</li>
+		</ul>
+	</div>
+	<div class="sample_block sample_block__content-box">
+		<ul>
+			<li>width: 400px</li>
+			<li>height: 200px</li>
+			<li>padding: 30px</li>
+			<li>box-sizing: content-box(default)</li>
+		</ul>
+	</div>
+	<div class="sample_block sample_block__border-box">
+		<ul>
+			<li>width: 400px</li>
+			<li>height: 200px</li>
+			<li>padding: 30px</li>
+			<li>box-sizing: content-box(default)</li>
+		</ul>
+	</div>
+</body>
+</html>

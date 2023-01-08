@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+		html, body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.header{
+			background: #222;
+			color: white;
+			padding: 10px 30px;
+
+			display: flex;;
+			align-items: center;
+			gap: 20px;
+		}
+
+		.logo{
+			flex-grow: 0;
+			flex-shrink: 0;
+			width:32px;	
+			height:32px;
+			border-radius: 50px;
+		}
+
+		.header-search{
+			border: 1px solid #cecece;
+			border-radius: 3px;;
+		}
+		.header-search input{
+			border:none;
+			background: transparent;
+			color:#cecece;
+			padding:5px 10px;
+		}
+
+		.header-nav ul{
+			list-style: none;
+			display: flex;
+			gap: 10px;
+		}
+		.header-nav ul a {
+			color: white;
+			text-decoration: none;
+		}
+		.header-notifications{
+			margin-left: auto;
+		}
+
+		.header-notifications,
+		.header-create-btn,
+		.header-profile-btn{
+			width:32px;
+			height: 32px;
+			flex: 0;
+			border: 1px solid #888;
+		}
+
+
+		.body{
+			display: flex;
+		}
+
+		.body-main{
+			background-color: #f6f8fa;
+			display: flex;
+		}
+
+		.repo-list {
+			max-width: 300px;
+			padding: 0 50px
+		}
+
+		.body-main{
+			flex: 1;
+			
+		}
+
+
+		.body-content,
+		.body-sidebar{
+			padding: 0 30px;
+		}
+
+		.body-sidebar {
+			width: 360px;
+		}
+
+
+
+	</style>
+</head>
+
+<body>
+	<div>
+		<header class="header">
+			<div class="logo"><img src="http://placekitten.com/32/32"></div>
+			<label class="header-search"><input placeholder="Search" /></label>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#">Pull requests</a></li>
+					<li><a href="#">Issues</a></li>
+					<li><a href="#">Codespaces</a></li>
+					<li><a href="#">Marketplace</a></li>
+				</ul>
+			</nav>
+			<div class="header-notifications">N</div>
+			<div class="header-create-btn">+</div>
+			<div class="header-profile-btn">Profile</div>
+		</header>
+		<div class="body">
+			<aside class="repo-list">
+				<h3>Top Repositories</h3>
+				<ul>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+					<li><a href="#">ITAcademy/project1</a></li>
+				</ul>
+			</aside>
+			<div class="body-main">
+				<div class="body-content">
+					<h1>The home for all developers - including you</h1>
+					<p>Welcome to your personal dashboard, where you can find an introduction to how GitHub works, tools to help you build software, and help merging your first lines of code.</p>
+				</div>
+
+				<aside class="body-sidebar">
+					<h3>Latest changes</h3>
+					<ul>
+						<li>
+							<p>Last week</p>
+							<a href="#">GitHub Issues – December 22nd update</a>
+						</li>
+						<li>
+							<p>Last week</p>
+							<a href="#">GitHub Issues – December 22nd update</a>
+						</li>
+						<li>
+							<p>Last week</p>
+							<a href="#">GitHub Issues – December 22nd update</a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>

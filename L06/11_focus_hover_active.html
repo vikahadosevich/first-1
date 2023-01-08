@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 5.5d</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        
+    }
+    .calculator{
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        border: #6e9c9e 3px solid;
+        border-radius: 12px;
+        width: 275px;
+    }
+
+    .calculator_header {
+        margin-top: 10px;
+        height: 35px;
+        text-align: right;
+        padding: 8px;
+        color:white
+    }
+
+    .calendar_wrapper{
+        margin: 8px 8px;
+        
+    }
+
+    .calculator_header,
+    .calculator_panel{
+        background-color: #6e9c9e;
+    }
+
+    .calculator_input,
+    .calculator_panel{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .calculator_input input{
+        border: #6e9c9e 3px solid;
+        border-radius: 5px;
+        width: 100%;
+        text-align: right;
+        padding: 6px 5px 4px;
+        color: #6e9c9e;
+        
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .calculator_panel{
+        width: 35%;
+        height: 30px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .calculator_controls table{
+
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+    .calculator_controls td{
+        border-color: #6e9c9e;
+        border:3px;
+        border-radius: 10px;
+        padding:4px;
+    }
+
+    .calculator_controls button{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #6e9c9e;
+        border: 3px solid #6e9c9e;
+        background: white;
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .calculator_controls button:hover{
+        background-color: #6e9c9e;
+        color: white;
+    }
+    .calculator_controls button:active{
+        background-color: #5e8688;
+    }
+
+    .calculator:hover .calculator_header{
+        background-color: #5e8688;
+    }
+</style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator_header">
+            Casio 3234
+        </div>
+        <div class="calendar_wrapper">
+        <div class="calculator_input">
+            <input value="1234">
+        </div>
+
+        <div class="calculator_panel">  </div>
+
+        <div class="calculator_controls">
+            <table>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>/</button></td>
+                </tr>
+                <tr>
+                    <td><button>,</button></td>
+                    <td><button>0</button></td>
+                    <td><button>=</button></td>
+                    <td><button>*</button></td>
+                </tr>
+            </table>
+            <!--стили границ ни для td, button не работают если в таком виде оставлять-->
+        </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

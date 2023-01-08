@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>5.5d</title>
+    <style>
+
+         * {
+            box-sizing: border-box;
+        }
+
+        .calculator{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid #6e9c9e;
+            border-radius: 13px;
+            width: 265px;
+        }
+    
+        .calc-header {
+            margin-top: 10px;
+            height: 35px;
+            text-align: right;
+            font-size: small;
+            padding: 8px;
+            color:white
+        }
+     
+        .calendar {
+            margin: 6px 6px;
+            
+        }
+
+        .calc-panel {
+            width: 37%;
+            height: 30px;
+            margin-left: auto;
+            margin-right: 3px;
+        }
+
+        .calc-header,
+        .calc-panel {
+            background-color: #6e9c9e;
+        }
+    
+        .calc-input,
+        .calc-panel {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        .calc-input input {
+            border: 3px solid #6e9c9e;
+            border-radius: 7px;
+            width: 100%;
+            text-align: right;
+            padding: 7px 6px 5px;
+            color: #6e9c9e;
+            font-size: 20px;
+        }
+     
+        .calc-controls table {
+            border: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        .calc-controls td{
+            border-color: #6e9c9e;
+            border:3px;
+            border-radius: 10px;
+            padding:4px;
+        }
+    
+        .calc-controls button {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            color: #6e9c9e;
+            border: 3px solid #6e9c9e;
+            background: white;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+
+        .calc-controls button:hover {
+            background-color: #6e9c9e;
+            color: white;
+        }
+
+        .calc-controls button:active {
+            background-color: #5e8688;
+        }
+    
+        .calculator:hover .calc-header {
+            background-color: #5e8688;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div class="calc-header">
+                Casio 3234
+            </div>
+            <div class="calendar">
+            <div class="calc-input">
+                <input value="лоррпапр">
+            </div>
+            <div class="calc-panel">  </div>
+            <div class="calc-controls">
+                <table>
+                    <tr>
+                        <td><button>7</button></td>
+                        <td><button>8</button></td>
+                        <td><button>9</button></td>
+                        <td><button>+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>4</button></td>
+                        <td><button>5</button></td>
+                        <td><button>6</button></td>
+                        <td><button>-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>1</button></td>
+                        <td><button>2</button></td>
+                        <td><button>3</button></td>
+                        <td><button>/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>,</button></td>
+                        <td><button>0</button></td>
+                        <td><button>=</button></td>
+                        <td><button>*</button></td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </div>
+    </body>
+    </html>
