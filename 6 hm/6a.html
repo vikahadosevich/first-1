@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            vertical-align: middle;
+        }
+        body article {
+            width: 750px;
+        }
+
+        #table > table {
+            width: 100%;
+            text-align: center;
+        }
+
+        #table > table td {
+            font-size: 17px;
+            width: calc(95%/5);
+            border-right: 4px solid red;
+        }
+
+        #table > table td:nth-last-child(1) {
+            border-right: none;
+        }
+
+        /* div */
+
+        #div {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #div > .item {
+            display: inline-block;
+            text-align: center;
+            width: calc(95% / 5);
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+            border-right: 4px solid red;
+        }
+
+        #div > .item:nth-last-child(1) {
+            border-right: none;
+        }
+
+        /* div */
+
+        #ul {
+            list-style-type: none;
+            text-align: center; 
+            padding: 0;
+            margin: 0;
+        }
+
+        #ul > ul {
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        #ul > ul > li {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            width: calc(95%/5);
+            display: inline-block;
+            font-size: 17px;
+            border-right: 4px solid red;
+        }
+
+        #ul > ul > li:nth-last-child(1) {
+            border-right: none;
+        }
+
+        /* flex */
+
+        #flex {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        #flex > div {
+            width: calc(95%/5);
+            border-right: 4px solid red;
+        }
+
+        #flex > div:nth-last-child(1) {
+            border-right: none;
+        }
+
+    </style>
+</head>
+<body>
+    <article>
+        <section id="table">
+            <table>
+                <tr>
+                    <td><a href="#">первая ссылка</a></td>
+                    <td><a href="#">вторая ссылка</a></td>
+                    <td><a href="#">третья ссылка</a></td>
+                    <td><a href="#">четвертая ссылка</a></td>
+                    <td><a href="#">пятая ссылка</a></td>
+                    <!--
+                        Способ через таблицу, самый легкий, но устаревший.
+                    -->
+                </tr>
+            </table>
+        </section>
+        <br>
+
+        <section id="div">
+            <div class="item"><a href="#">первая ссылка</a>
+                <div class="vl"></div>
+            </div>
+            
+            <div class="item"><a href="#">вторая ссылка</a>
+                <div class="vl"></div>
+            </div>
+            <div class="item"><a href="#">третья ссылка</a>
+                <div class="vl"></div>
+            </div>
+            <div class="item"><a href="#">четвертая ссылка</a>
+                <div class="vl"></div>
+            </div>
+            <div class="item"><a href="#">пятая ссылка</a>
+                <div class="vl"></div>
+            </div>
+            <!--
+                Способ через div, один из распространнёных и более современный.
+            -->
+        </section>
+
+        <br>
+
+        <section id="ul">
+            <ul>
+                <li><a href="#">первая ссылка</a></li>
+                <li><a href="#">вторая ссылка</a></li>
+                <li><a href="#">третья ссылка</a></li>
+                <li><a href="#">четвертая ссылка</a></li>
+                <li><a href="#">пятая ссылка</a></li>
+            </ul>
+            <!-- Способ через маркируемый список, тоже легкий и быстрый, как через таблицы. -->
+        </section>
+
+        <br>
+
+        <section id="flex">
+            <div><a href="#">первая ссылка</a></div>
+            <div><a href="#">вторая ссылка</a></div>
+            <div><a href="#">третья ссылка</a></div>
+            <div><a href="#">четвертая ссылка</a></div>
+            <div><a href="#">пятая ссылка</a></div>
+            <!-- Последний способ через контейнеры, достаточно легкий и быстрый. -->
+        </section>
+    </article>
+</body>
+</html>
