@@ -20,16 +20,37 @@
         border: solid gray 1px;
       }
 
-      .one_line:nth-child(even) 
+      table.CHESS tr:first-child td:nth-child(even),
+      table.CHESS tr:first-child td:nth-child(odd),
+      table.CHESS tr:last-child td:nth-child(even),
+      table.CHESS tr:last-child td:nth-child(odd),
+      table.CHESS tr:nth-child(odd) td:first-child,
+      table.CHESS tr:nth-child(even) td:first-child,
+      table.CHESS tr:nth-child(odd) td:last-child,
+      table.CHESS tr:nth-child(even) td:last-child
+      {
+        background-color: lightgreen;
+        width: 10px;
+        height: 10px;
+      }
+
+      .CHESS tr:nth-child(odd) td:nth-child(even),
+      .CHESS tr:nth-child(even) td:nth-child(odd)
       { 
-        background-color: black
+        background-color: black;
+      }
+
+      .CHESS tr:nth-child(even) td:nth-child(even),
+      .CHESS tr:nth-child(odd) td:nth-child(odd)
+      {
+        background: white;
       }
     
     </style>
     
     <table class='CHESS'>
     <tr> 
-      <td class="one_line"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></div>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></div>
     </tr>
     <tr>
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -60,4 +81,5 @@
     </tr>
     </table>
     
-    </body></html>  
+    </body>
+    </html>  
