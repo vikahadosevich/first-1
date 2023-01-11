@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" 
+    content="text/html; charset=utf-8" />
+    <title>stars</title>
+</head>
+<style>
+    .rating {
+        display: inline-flex;
+    }
+
+    .stars {
+        cursor: pointer;
+        opacity: 0.1;
+    }
+
+    .rating:hover .stars {
+        opacity: 1;
+    }
+
+    .rating:hover .stars:hover ~ .stars {
+        opacity: 0.1;
+    }
+</style>
+
+<body>
+	<div class="rating">
+	<div class="stars"><img src="star1.png"></div>
+    <div class="stars"><img src="star1.png"></div>
+    <div class="stars"><img src="star1.png"></div>
+    <div class="stars"><img src="star1.png"></div>
+    <div class="stars"><img src="star1.png"></div>
+	</div>
+	</body>
+</html>
